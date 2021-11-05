@@ -1,7 +1,7 @@
 <template>
   <div>
     <nuxt-link to="/">
-      <button class="text-black bg-white hover:bg-gray-100">Back</button>
+      <button class="text-black bg-white hover:bg-gray-100">Home</button>
     </nuxt-link>
     <div
       class="
@@ -17,22 +17,6 @@
         flex flex-col
       "
     >
-      Login with
-
-      <button
-        class="
-          uppercase
-          h-12
-          mt-3
-          text-white
-          w-full
-          rounded
-          bg-blue-800
-          hover:bg-blue-900
-        "
-      >
-        <i class="fa fa-facebook mr-2"></i>Facebook
-      </button>
       <button
         @click="loginWithGoogle()"
         class="
@@ -46,7 +30,7 @@
           hover:bg-red-900
         "
       >
-        <i class="fa fa-google mr-2"></i>Google
+        <i class="fa fa-google mr-2"></i>Login with Google
       </button>
     </div>
   </div>

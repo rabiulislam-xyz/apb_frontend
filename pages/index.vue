@@ -1,9 +1,15 @@
 <template>
-  <a class="hover:bg-gray-200 text-black text-center py-2 px-4 rounded">
-    <nuxt-link to="/login">click here to login</nuxt-link>
-  </a>
+  <section class="section">
+    Hello! {{ $auth.user.email }},
+    <br />
+    fill up this form below!
+    <br />
+    <nuxt-link to="/logout">Logout</nuxt-link>
+  </section>
 </template>
 
 <script>
-export default {};
+export default {
+  middleware: "auth",
+};
 </script>
