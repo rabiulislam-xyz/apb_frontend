@@ -39,7 +39,8 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
+    '@nuxtjs/toast',
   ],
 
   auth: {
@@ -54,6 +55,12 @@ export default {
         },
       },
     },
+    localStorage: false,
+    redirect: {
+      login: '/',
+      logout: '/',
+      home: '/'
+  }
   },
   
   // Build Configuration: https://go.nuxtjs.dev/config-build

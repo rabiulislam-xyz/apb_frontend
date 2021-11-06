@@ -1,8 +1,5 @@
 <template>
   <div>
-    <nuxt-link to="/">
-      <button class="text-black bg-white hover:bg-gray-100">Home</button>
-    </nuxt-link>
     <div
       class="
         pt-4
@@ -38,8 +35,10 @@
 
 <script>
 export default {
+  // middleware: "guest",
   methods: {
     loginWithGoogle() {
+      this.$toast.show("Logging with google", { position: "top-right" });
       this.$auth.loginWith("google");
     },
   },
